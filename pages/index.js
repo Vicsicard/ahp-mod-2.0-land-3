@@ -8,6 +8,7 @@ import RoadmapTimeline from '../components/RoadmapTimeline';
 import AnimatedCTA from '../components/AnimatedCTA';
 import TrustFAQ from '../components/TrustFAQ';
 import AnimatedFooter from '../components/AnimatedFooter';
+import VisibilityScan from '../components/VisibilityScan';
 
 export default function Home() {
   // Add scroll reveal effect
@@ -93,6 +94,19 @@ export default function Home() {
 
         {/* How AHP Helps */}
         <HowAHPHelps />
+        
+        {/* Visibility Scan Demo */}
+        <section className="section py-20 relative overflow-hidden transition-all duration-700 opacity-0 translate-y-10">
+          <div className="max-w-6xl mx-auto px-4 mb-12">
+            <h2 className="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-electric-blue text-center">
+              Try It Yourself
+            </h2>
+            <p className="text-lg mb-8 text-gray-600 text-center max-w-3xl mx-auto">
+              Experience how AHP Mod 2.0 analyzes your website's AI visibility. Enter your URL below to generate a sample report and see how your site performs in the AI layer.
+            </p>
+          </div>
+          <VisibilityScan />
+        </section>
 
         {/* Future Roadmap Teaser */}
         <RoadmapTimeline />
